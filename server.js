@@ -29,7 +29,6 @@ app.post('/usuarios', async (req, res) => {
     res.status(201).json(user)
 });
 
-
 app.put('/usuarios/:id', async (req, res) => {
   
 
@@ -48,7 +47,6 @@ app.put('/usuarios/:id', async (req, res) => {
 
     res.status(201).json(user)
 });
-
 
 app.delete('/usuarios/:id', async (req, res) => {
     await prisma.user.delete ({
